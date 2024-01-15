@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1015</width>
-    <height>797</height>
+    <width>1658</width>
+    <height>1148</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1301,8 +1301,8 @@ color: rgb(255, 0, 0);</string>
    <widget class="QLabel" name="label_21">
     <property name="geometry">
      <rect>
-      <x>-60</x>
-      <y>530</y>
+      <x>-120</x>
+      <y>500</y>
       <width>301</width>
       <height>121</height>
      </rect>
@@ -1317,8 +1317,8 @@ color: rgb(255, 0, 0);</string>
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>580</y>
+      <x>-80</x>
+      <y>520</y>
       <width>301</width>
       <height>121</height>
      </rect>
@@ -1333,8 +1333,8 @@ color: rgb(255, 0, 0);</string>
    <widget class="QLabel" name="label_20">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>630</y>
+      <x>-20</x>
+      <y>550</y>
       <width>301</width>
       <height>121</height>
      </rect>
@@ -1349,8 +1349,8 @@ color: rgb(255, 0, 0);</string>
    <widget class="QLabel" name="label_23">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>690</y>
+      <x>40</x>
+      <y>580</y>
       <width>301</width>
       <height>121</height>
      </rect>
@@ -1360,16 +1360,6 @@ color: rgb(255, 0, 0);</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_worklan">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>10</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="label_worker_1">
@@ -2062,13 +2052,77 @@ color: rgb(255, 0, 0);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>610</y>
+      <width>301</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/imagfil/Lovepik_com-610122595-25d cute convenience store.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>630</y>
+      <width>301</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/imagfil/Lovepik_com-610122595-25d cute convenience store.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>670</y>
+      <width>301</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/imagfil/Lovepik_com-610122595-25d cute convenience store.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>710</y>
+      <width>301</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/imagfil/Lovepik_com-610122595-25d cute convenience store.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1015</width>
+     <width>1658</width>
      <height>21</height>
     </rect>
    </property>

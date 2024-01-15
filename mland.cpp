@@ -3,6 +3,7 @@
 #include "QFile"
 #include "QTextStream"
 #include "QMessageBox"
+#include "time_land.h"
 mland::mland(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::mland)
@@ -92,6 +93,7 @@ void mland::on_toolButton_clicked()
 
 void mland::on_pushButton_2_clicked()
 {
+
     QFile wheat("D:/faz2/faz2/fils/number_of_wheat.txt");
     QTextStream stream7(&wheat);
     QFile workerlan("D:/faz2/faz2/fils/workerlan.txt");
@@ -147,6 +149,22 @@ void mland::on_pushButton_2_clicked()
          }else{
              QMessageBox::warning(this,"EROR","The file could not be opened");                   // If the file is not opened, it will give an error
          }
+
+
+
+         QFile numbers("D:/faz2/faz2/fils/number.txt");
+         QTextStream stream6(&numbers);
+         if(numbers.open(QIODevice::ReadOnly | QIODevice::Text)){
+               stream6 >> number;
+               numbers.close();
+         }else{
+             QMessageBox::warning(this,"EROR","The file could not be opened");                   // If the file is not opened, it will give an error
+         }
+             time_land* f[14];
+             for(int i=0; i<14 ; i++){
+                 f[i]=new time_land;
+             }
+//         f[0]->getUI()->pushButton_12->setEnabled(false);
 
     }
     else{
@@ -220,7 +238,7 @@ void mland::on_pushButton_clicked()
             QMessageBox::warning(this,"EROR","The file could not be opened");                   // If the file is not opened, it will give an error
         }
     }else{
-        QMessageBox::warning(this,"EROR","You don't have enough corn");                   // Declaring an error in terms of the number of corn
+        QMessageBox::warning(this,"EROR","You don't have enough corn or worker");                   // Declaring an error in terms of the number of corn
      }
      if(corn.open(QIODevice::WriteOnly | QIODevice::Text)){
      stream8 << number_of_corn;
@@ -289,7 +307,7 @@ void mland::on_pushButton_6_clicked()
             QMessageBox::warning(this,"EROR","The file could not be opened");                   // If the file is not opened, it will give an error
         }
     }else{
-        QMessageBox::warning(this,"EROR","You don't have enough cow");                  // Declaring an error in terms of the number of cow
+        QMessageBox::warning(this,"EROR","You don't have enough cow or worker");                  // Declaring an error in terms of the number of cow
      }
     if(cow.open(QIODevice::WriteOnly | QIODevice::Text)){
           stream8 << number_of_cow;
@@ -358,7 +376,7 @@ void mland::on_pushButton_7_clicked()
             QMessageBox::warning(this,"EROR","The file could not be opened");                   // If the file is not opened, it will give an error
         }
     }else{
-        QMessageBox::warning(this,"EROR","You don't have enough chicken");                  // Declaring an error in terms of the number of chicken
+        QMessageBox::warning(this,"EROR","You don't have enough chicken or worker");                  // Declaring an error in terms of the number of chicken
      }
     if(chicken.open(QIODevice::WriteOnly | QIODevice::Text)){
           stream8 << number_of_chicken;
@@ -443,7 +461,7 @@ void mland::on_pushButton_10_clicked()
             QMessageBox::warning(this,"EROR","The file could not be opened");                   // If the file is not opened, it will give an error
         }
     }else{
-        QMessageBox::warning(this,"EROR","You don't have enough sheep");                   // Declaring an error in terms of the number of sheep
+        QMessageBox::warning(this,"EROR","You don't have enough sheep or worker");                   // Declaring an error in terms of the number of sheep
      }
     if(sheep.open(QIODevice::WriteOnly | QIODevice::Text)){
           stream8 << number_of_sheep;

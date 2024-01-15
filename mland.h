@@ -40,6 +40,7 @@ private:
     Ui::mland *ui;
     QMediaPlayer *player = new
     QMediaPlayer;
+    int number=0;
 //    QTimer *timer;
 //    QElapsedTimer elapsedTimer;
 };

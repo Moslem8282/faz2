@@ -19,11 +19,11 @@ public:
 private slots:
 
 
-    void on_spinBox_land_valueChanged(int arg1);
+//    void on_spinBox_land_valueChanged(int arg1);
 
     void on_spinBox_worker_valueChanged(int arg1);
 
-    void on_pushButton_land_clicked();
+//    void on_pushButton_land_clicked();
 
     void on_pushButton_worker_clicked();
 

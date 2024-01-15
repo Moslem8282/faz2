@@ -23,6 +23,8 @@ public:
 private slots:
     void updateTime();
 
+//    void lands(int number , QString cultivations);
+
 //    void updatewheat();
 
 //    void updatecorn();
@@ -72,7 +74,6 @@ private slots:
     void on_pushButton_9_clicked();
 
     void on_pushButton_Butcher_clicked();
-
 
     void on_pushButton_13_clicked();
 
@@ -127,12 +128,12 @@ private slots:
 private:
     Ui::page2 *ui;
     QTimer *timer;
-    QTimer *wheat;
     QElapsedTimer elapsedTimer;
     QElapsedTimer elapsedwheat;
     int sw = 0;
     int play = 1;
     int pos=0;
+    int number[7][2];
 
 
 };
